@@ -1,0 +1,5 @@
+__pycache__/
+*.pyc
+.env
+streamlit-out.log
+streamlit-err.log
