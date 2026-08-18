@@ -664,7 +664,7 @@ with top_left:
         height=170,
         placeholder="Describe what the crew is doing, where the work is happening, and any conditions that need review.",
     )
-    run_button = st.button("Run Safety Review", type="primary", use_container_width=True)
+    run_button = st.button("Run Safety Review", type="primary", width="stretch")
     st.markdown("</div>", unsafe_allow_html=True)
 
 with top_right:
@@ -866,7 +866,7 @@ if result and saved_context:
                 data=report_markdown.encode("utf-8"),
                 file_name="agentic-construction-safety-report.md",
                 mime="text/markdown",
-                use_container_width=True,
+                width="stretch",
             )
             with st.expander("View generated report"):
                 st.code(report_markdown, language="markdown")
